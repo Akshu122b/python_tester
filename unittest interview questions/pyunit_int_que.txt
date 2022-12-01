@@ -1,0 +1,63 @@
+1. Can you explain what a unit test is?
+A unit test is a test that is used to determine if a specific unit of code is working as intended. This is usually done by writing a test that will execute the code and then checking the results against a known good result.
+
+2. What do you understand about the Assert keyword in python unittest?
+Assert is a keyword used in the Python unittest module to make assertions about the code being tested. Assertions are checks that the code is doing what it is supposed to be doing, and they will throw an error if the check fails. This is useful for finding bugs in code, and for making sure that the code behaves as expected.
+
+3. How can you create a new test suite with Python unittest?
+You can create a new test suite with Python unittest by subclassing unittest.TestSuite and adding your own test cases.
+
+4. What are some of the most commonly used assertion methods available for use in Python unittest?
+Some of the most commonly used assertion methods in Python unittest are assertEqual(), assertTrue(), and assertFalse(). These methods allow you to compare two values to see if they are equal, check if a value is true or false, respectively. There are many other assertion methods available, but these are some of the most commonly used.
+
+5. How does one use multiple assertions to verify that all conditions have been met in Python unittest?
+By using the assertTrue() and assertFalse() methods, it is possible to check multiple conditions in a single test. For example, to check that a list is not empty and that its first element is greater than 5, one could use the following code:
+
+assertTrue(len(mylist) > 0)
+assertTrue(mylist[0] > 5)
+
+6. What’s the best way to organize your tests so that they run as efficiently and quickly as possible?
+One way to optimize your tests is to use a tool like pytest, which allows you to run tests in parallel. You can also use the built-in unittest module in Python, which has some features for running tests in parallel as well. Another way to optimize your tests is to structure them in a way that minimizes the number of dependencies between tests. This will make it so that each test can be run independently of the others, which will make them run faster.
+
+7. Why is it important to use setup and teardown methods when writing unit tests?
+The setup and teardown methods are important when writing unit tests because they allow you to initialize the environment for each test and then clean up after each test. This ensures that each test is run in a consistent environment and that no changes made by one test affect the results of another test.
+
+8. Is there any difference between setUpClass() and tearDownClass()?
+Yes, there is a difference between setUpClass() and tearDownClass(). setUpClass() is run only once, at the beginning of the test suite, while tearDownClass() is run only once, at the end of the test suite. This means that any actions performed in setUpClass() will be undone by tearDownClass(), and vice versa.
+
+9. When should I write my own custom assertions?
+You should write your own custom assertions when you need to test something that is not covered by the built-in assertions. For example, if you need to test for a specific type of exception, or if you need to check for a specific value in a data structure, you would need to write a custom assertion.
+
+10. How can you skip a particular test method or class using the decorator @unittest.skip?
+You can use the @unittest.skip decorator to skip a particular test method or class. This is useful if you want to temporarily disable a test or if you know that a particular test will not work on your system.
+
+11. What happens if an exception occurs during setup, tearDown, or setUpClass but not in the actual test case?
+If an exception occurs during setup, tearDown, or setUpClass, the test case will still be run. However, if an exception occurs in the actual test case, the test case will be aborted and the exception will be reported.
+
+12. Have you ever had to solve challenges while working on real-world applications involving unit testing? If yes, then which ones were they?
+Yes, I have had to solve challenges while working on real-world applications involving unit testing. One challenge that I faced was when I was working on an application that had a lot of legacy code. I had to figure out how to write unit tests for the legacy code so that I could ensure that the new code I was writing would not break the existing functionality. Another challenge I faced was when I was working on an application that had a lot of dependencies on other applications. I had to figure out how to mock out those dependencies so that I could unit test my code in isolation.
+
+13. How do you handle configuration settings and databases when running automated unit tests?
+When running automated unit tests, you will need to take into account how your configuration settings and databases are set up. You will need to make sure that your tests are able to run without affecting the live data in your databases. One way to do this is to create a separate testing database that your tests can run against. This way, your tests can be run without affecting the data in your production database.
+
+14. What approach do you follow when creating a test script for a complicated system?
+I always start by breaking down the system into smaller, more manageable pieces. Once I have a good understanding of how the system works, I can start creating test scripts for each individual component. I also make sure to include plenty of comments in my code so that others can understand my thought process.
+
+15. What is the purpose of the assertRaises() method?
+The assertRaises() method is used to verify that a given method or function raises a specified exception when called. This is useful for testing error handling code, or for verifying that a method behaves correctly when an error is encountered.
+
+16. What’s the difference between the assertEqual() and assertAlmostEqual() methods?
+The assertEqual() method checks that two values are equal, while the assertAlmostEqual() method checks that two values are almost equal, within a certain tolerance.
+
+17. Which tools do you prefer to use for automating unit tests?
+I prefer to use the Python unittest module for automating unit tests. This module is part of the standard library, so it is always available, and it is relatively easy to use.
+
+18. What is the difference between the assertTrue() and assertFalse() methods?
+The assertTrue() method checks that a given condition is True, while the assertFalse() method checks that a given condition is False. These methods are often used to check the return value of a given function or method call.
+
+19. What do you think is the biggest problem with unit tests?
+I think the biggest problem with unit tests is that they can be time-consuming to write and maintain. It can be easy to let your test suite get out of date as your code changes, and then you can end up with a lot of false positives or false negatives. It’s important to keep your tests up to date, but it can be a lot of work.
+
+20. What is the purpose of the assertNotEquals() method?
+The assertNotEquals() method is used to check that two values are not equal. This is the opposite of the assertEquals() method, which checks that two values are equal.
+
